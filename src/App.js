@@ -10,7 +10,6 @@ import './index.css';
 
 function App() {
   return (
-    // <div className="App">
     <Router>
       <Switch>
         <Route path='/' component={Home} exact strict />
