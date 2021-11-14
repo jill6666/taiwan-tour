@@ -14,6 +14,7 @@ import SpotCardRow from '../components/SpotCardRow';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
+
 function ScrollTop(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({

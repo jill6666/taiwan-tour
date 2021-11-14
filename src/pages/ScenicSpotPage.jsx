@@ -1,25 +1,19 @@
-import { Grid, Toolbar, Typography, Button, CircularProgress, createTheme, ThemeProvider } from '@material-ui/core';
+import { Grid, Toolbar, Typography, Button, CircularProgress } from '@material-ui/core';
 import PropTypes from "prop-types";
 import { makeStyles } from '@material-ui/styles';
 import React, { useState, useEffect } from 'react';
-import MainSearch from '../components/MainSearch';
 import Divider from '@mui/material/Divider';
-import SpotCardCol from '../components/SpotCardCol';
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Box from "@material-ui/core/Box";
 import ToTop from '../assets/totop.png';
 import Zoom from "@material-ui/core/Zoom";
 import Footer from '../components/Footer';
-import SpotCardRow from '../components/SpotCardRow';
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
 import spotLabel from '../assets/spotLabel.png';
 import busIcon from '../assets/busIcon.png';
 import feeIcon from '../assets/feeIcon.png';
 import locationIcon from '../assets/locationIcon.png';
 import timeIcon from '../assets/timeIcon.png';
 import Map from '../components/Map';
-import Logo from '../assets/logo.png';
 
 function ScrollTop(props) {
     const { children, window } = props;
