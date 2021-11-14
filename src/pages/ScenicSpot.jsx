@@ -617,7 +617,7 @@ const ScenicSpot = (props) => {
             <Button
               sx={{ width: '10px', height: '10px' }}
             >
-              <img src={ToTop} width='100%' />
+              <img alt='toTopIcon' src={ToTop} width='100%' />
             </Button>
           </ScrollTop>
         </Grid>

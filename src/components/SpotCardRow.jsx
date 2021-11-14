@@ -7,6 +7,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
+import logo from '../assets/logo.png'
 
 function SpotCardRow(props) {
     const { data } = props;
@@ -18,7 +19,7 @@ function SpotCardRow(props) {
                     <CardMedia
                         component="img"
                         sx={{ width: '100%', height: 250, display: { xs: 'none', sm: 'block' } }}
-                        image={data.Picture.PictureUrl1}
+                        image={data.Picture.PictureUrl1? (data.Picture.PictureUrl1):(logo)}
                     />
                     <CardContent sx={{
                         mx: 2,

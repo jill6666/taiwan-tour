@@ -25,7 +25,7 @@ function Footer() {
             <Grid container xs={12}>
                 <Grid item xs={0} sm={5} />
                 <Grid item xs={3} sm={2}>
-                    <img src={FooterImg} width='300px' height='auto' />
+                    <img alt='footImg' src={FooterImg} width='300px' height='auto' />
                 </Grid>
                 <Grid item xs={3} sm={3}>
                     <Copyright />

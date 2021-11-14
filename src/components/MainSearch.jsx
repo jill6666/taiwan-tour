@@ -25,7 +25,6 @@ const theme = createTheme({
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
-  borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.6),
   '&:hover': {
     backgroundColor: alpha(theme.palette.common.white, 0.7),
@@ -87,12 +86,9 @@ const MainSearch = () => {
             <Button
               variant="contained"
               style={{ backgroundColor: '#fff', color: '#ff5358', fontSize: 17, fontWeight: 'bold' }}
-              sx={{
-                paddingLeft: '30px',
-                paddingRight: '30px'
-              }}
+              xs={3} sm={1.5}
               startIcon={<SearchIcon />}>
-              <Typography xs={0}>
+              <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
                 搜尋
               </Typography>
             </Button>
@@ -105,8 +101,8 @@ const MainSearch = () => {
                 marginLeft: '15px'
               }}
             >
-              <img src={Filter} width='22px' />
-              <Typography xs={0}>
+              <img alt='filterIcon' src={Filter} width='22px' />
+              <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
                 篩選
               </Typography>
 
