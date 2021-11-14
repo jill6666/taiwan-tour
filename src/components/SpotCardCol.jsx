@@ -13,9 +13,9 @@ function SpotCardCol(props) {
 
     return (
 
-        <Grid item xs={3.75}>
+        <Grid item xs={10} sm={3.75} >
 
-            <Card sx={{ margin: '30px', }}>
+            <Card sx={{ margin: '30px' }}>
                 <CardActionArea component="a" href="#">
                     <Box sx={{
                         height: '160px',
@@ -23,7 +23,7 @@ function SpotCardCol(props) {
                     }}>
                         <CardMedia
                             component="img"
-                            sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
+                            sx={{ width: 160, display: { sm: 'block' } }}
                             image={data.Picture.PictureUrl1}
                         />
                         <CardContent sx={{

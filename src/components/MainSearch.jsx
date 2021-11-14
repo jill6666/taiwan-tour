@@ -87,7 +87,8 @@ const MainSearch = () => {
               variant="contained"
               style={{ backgroundColor: '#fff', color: '#ff5358', fontSize: 17, fontWeight: 'bold' }}
               xs={3} sm={1.5}
-              startIcon={<SearchIcon />}>
+              >
+                <SearchIcon width='22px' />
               <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
                 搜尋
               </Typography>

@@ -588,7 +588,7 @@ const ScenicSpot = (props) => {
           </Grid>
 
           {hotData ? (
-            <Grid item container xs={12} sx={{ justifyContent: 'center' }}>
+            <Grid item container xs={12} sx={{ justifyContent: 'center' ,overflow: 'visible' }}>
               {hotData.map((data) =>
                 <SpotCardCol data={data} />
               )}
@@ -600,7 +600,7 @@ const ScenicSpot = (props) => {
             <Divider className={classes.divider} color='primary' />
           </Grid>
           {spotData ? (
-            <Grid item container spacing={4} xs={12} sx={{ justifyContent: 'center', padding: '80px' }}>
+            <Grid item container spacing={4} xs={12} sx={{ justifyContent: 'center', padding:{ xs: '5px', sm: '80px' }}}>
               {spotData.map((data) =>
                 <SpotCardRow data={data} />
               )}

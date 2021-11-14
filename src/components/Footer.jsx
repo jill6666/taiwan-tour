@@ -12,7 +12,6 @@ function Copyright() {
             <Typography color="inherit" display='inline'>
                 F2EWiNWiN. All rights reserved.
             </Typography>
-            {'.'}
         </Typography>
     );
 }
@@ -23,14 +22,14 @@ function Footer() {
         <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }} >
 
             <Grid container xs={12}>
-                <Grid item xs={0} sm={5} />
-                <Grid item xs={3} sm={2}>
-                    <img alt='footImg' src={FooterImg} width='300px' height='auto' />
+                <Grid item xs={1} sm={5} />
+                <Grid item xs={5} sm={2}>
+                    <img alt='footImg' src={FooterImg} width='200px' height='auto' />
                 </Grid>
-                <Grid item xs={3} sm={3}>
+                <Grid item xs={5} sm={3}>
                     <Copyright />
                 </Grid>
-
+                
             </Grid>
         </Box>
     );
