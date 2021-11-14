@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect } from 'react';
+import React, { memo, useState } from 'react';
 import { makeStyles, useMediaQuery } from '@material-ui/core';
 import Train from '../Component/train.png';
 import JioFeng from '../Component/jiofeng.png';
