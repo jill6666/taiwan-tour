@@ -7,14 +7,15 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import './index.css';
+import Scenicspots from './pages/ScenicSpot'
+import ScenicSpotPage  from './pages/ScenicSpotPage';
 import Appbar from './TapBar';
-
 // TODO: replace components after merge
-const Scenicspot = () => <div>Scenicspot</div>
+const Scenicspot = () => <div> <Scenicspots/> </div>
 const Restaurant = () => <div>Restaurant</div>
 const Activity = () => <div>Activity</div>
 // TODO: get api data by ${props.match.params.ID} of url
-const ScenicspotPage = (props) => <div>ScenicspotPage {props.match.params.ID}</div>
+//const ScenicspotPage = (props) => <div>ScenicspotPage {props.match.params.ID}</div>
 const RestaurantPage = (props) => <div>RestaurantPage {props.match.params.ID}</div>
 const ActivityPage = (props) => <div>ActivityPage {props.match.params.ID}</div>
 
@@ -30,7 +31,7 @@ function App() {
         <Route
           path='/scenicspot/:ID'
           component={(props) => {
-            return <ScenicspotPage {...props}></ScenicspotPage>;
+            return <ScenicSpotPage {...props}></ScenicSpotPage>;
           }}
           exact strict
         />
