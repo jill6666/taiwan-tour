@@ -6,9 +6,9 @@ import React, {
 import {
   useMediaQuery,
   useEventCallback,
+  makeStyles
 } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core';
 import Tab_spot from '../Component/tab_spot.png';
 import Tab_spot_hov from '../Component/tab_spot_hov.png';
 import Tab_rest from '../Component/tab_rest.png';
@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center center',
     width: '60px',
     height: '110px',
+    transition: 'all 0.1s ease-in-out',
     '&:hover': {
       backgroundImage: `url(${Tab_spot_hov})`,
     }
@@ -36,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center center',
     width: '60px',
     height: '110px',
+    transition: 'all 0.1s ease-in-out',
     '&:hover': {
       backgroundImage: `url(${Tab_rest_hov})`,
     }
@@ -47,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center center',
     width: '60px',
     height: '110px',
+    transition: 'all 0.1s ease-in-out',
     '&:hover': {
       backgroundImage: `url(${Tab_activity_hov})`,
     }
