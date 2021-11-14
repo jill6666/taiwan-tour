@@ -8,6 +8,7 @@ import {
 import Home from './pages/Home';
 import './index.css';
 import Scenicspots from './pages/ScenicSpot'
+import Appbar from './TapBar';
 
 // TODO: replace components after merge
 const Scenicspot = () => <div> <Scenicspots/> </div>
@@ -21,6 +22,7 @@ const ActivityPage = (props) => <div>ActivityPage {props.match.params.ID}</div>
 function App() {
   return (
     <Router>
+      <Appbar />
       <Switch>
         <Route path='/' component={Home} exact strict />
         <Route path='/scenicspot' component={Scenicspot} exact strict />
